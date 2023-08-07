@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Coinpes</string>
+    <string name="app_url">https://api.coinpes.com</string>
+    <string name="title_buy">Buy</string>
+    <string name="title_sell">Sell</string>
+    <string name="title_wallet">Wallet</string>
+    <string name="loreum_ispsum">The initial loading of a vector drawable can cost more CPU cycles than the corresponding raster image. Afterward, memory use and performance are similar between the two. We recommend that you limit a vector image to a maximum of 200 x 200 dp; otherwise, it can take too long to draw.</string>
+</resources>

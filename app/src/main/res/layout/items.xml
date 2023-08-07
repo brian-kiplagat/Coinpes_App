@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <RelativeLayout
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/circle_image"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/ic_baseline_circle_24"
+                app:tint="@color/purple_500" />
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/circle_image"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:id="@+id/feed_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/like_image"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ic_baseline_thumb_up_off_alt_24"
+                app:tint="@color/purple_500" />
+
+            <TextView
+              android:layout_toStartOf="@id/like_image"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                style="@style/TextAppearance.Material3.BodyLarge"
+                android:id="@+id/feed_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loreum_ispsum"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
